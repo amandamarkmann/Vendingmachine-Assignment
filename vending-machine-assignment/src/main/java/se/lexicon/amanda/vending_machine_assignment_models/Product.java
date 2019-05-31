@@ -11,17 +11,14 @@ public abstract class Product {
 		this.price = price;
 	}
 	
-	//override string tostring?
-	String examine() { //visa vilka produkter man kan välja mellan
-		return null;
-	} 
+
+	abstract String examine();
 	
 	
 	abstract Product purchase(int money); 
 	
 	
-	abstract void use(); //om man ska äta eller dricka den
-	
+	abstract void use();
 	
 	
 	public String getName() {

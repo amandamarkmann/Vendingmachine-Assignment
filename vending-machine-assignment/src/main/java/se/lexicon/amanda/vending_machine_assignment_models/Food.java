@@ -10,16 +10,18 @@ public class Food extends Product {
 		this.calories = calories;
 	}
 
-	Product purchase(int money) { //om man har råd så får man köpa
+	Product purchase(int money) { 
 		return null;
 	}
 	
-	String examine() { //override string tostring?
-		return null;
+	@Override
+	String examine() { 
+		return getName() + " " + getCalories() + " " + getPrice();
 	}
 	
-	//override?
-	public void use() { //ät den
+	@Override
+	public void use() { 
+		System.out.println("Now you are not hungry anymore!");
 	}
 
 	public int getCalories() {

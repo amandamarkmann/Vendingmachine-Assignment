@@ -12,16 +12,18 @@ public class Drink extends Product {
 		this.volume = volume;
 	}
 
-	Product purchase(int money) { //om man har råd så får man köpa
+	Product purchase(int money) { 
 		return null;
 	}
 	
-	String examine() { //override string tostring?
-		return null;
+	@Override
+	String examine() {
+		return getName() + " " + getVolume() + " " + getPrice();
 	}
 	
-	//override?
-	public void use() { //drick den!
+	@Override
+	public void use() { 
+		System.out.println("What a refreshing drink you just had!");
 	}
 
 	public String getVolume() {

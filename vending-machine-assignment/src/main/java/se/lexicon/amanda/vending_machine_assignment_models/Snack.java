@@ -10,18 +10,19 @@ public class Snack extends Product {
 		this.sugarPercent = sugarPercent;
 	}
 
-	Product purchase(int money) { //om man har råd så får man köpa
+	Product purchase(int money) {
 		return null;
-		
 	}
 	
-	String examine() { //override string to string?
-		return null; //this snack?
+	@Override
+	String examine() {
+		return getName() + " " + getSugarPercent() + " " + getPrice(); 
 	}
 	
 	
-	//override?
-	public void use() { //ät den!
+	@Override
+	public void use() { 
+		System.out.println("No more sugarcravings for you!");
 		
 	}
 

@@ -10,10 +10,7 @@ public class Food extends Product {
 		this.calories = calories;
 	}
 
-	Product purchase(int money) { 
-		return null;
-	}
-	
+
 	@Override
 	String examine() { 
 		return getName() + " " + getCalories() + " " + getPrice();

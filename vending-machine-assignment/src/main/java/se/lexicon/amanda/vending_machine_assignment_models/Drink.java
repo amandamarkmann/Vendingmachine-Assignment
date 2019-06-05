@@ -12,9 +12,6 @@ public class Drink extends Product {
 		this.volume = volume;
 	}
 
-	Product purchase(int money) { 
-		return null;
-	}
 	
 	@Override
 	String examine() {
@@ -23,7 +20,7 @@ public class Drink extends Product {
 	
 	@Override
 	public void use() { 
-		System.out.println("What a refreshing drink you just had!");
+		System.out.println("What a refreshing " + getName() + " you just had!");
 	}
 
 	public String getVolume() {

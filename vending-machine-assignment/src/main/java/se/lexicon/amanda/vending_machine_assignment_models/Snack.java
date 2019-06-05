@@ -10,9 +10,7 @@ public class Snack extends Product {
 		this.sugarPercent = sugarPercent;
 	}
 
-	Product purchase(int money) {
-		return null;
-	}
+	
 	
 	@Override
 	String examine() {

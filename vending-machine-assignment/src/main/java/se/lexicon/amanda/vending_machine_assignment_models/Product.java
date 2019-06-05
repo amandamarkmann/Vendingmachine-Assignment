@@ -15,8 +15,14 @@ public abstract class Product {
 	abstract String examine();
 	
 	
-	abstract Product purchase(int money); 
-	
+	public Product purchase(int money) {
+
+		if(getPrice() > money) {
+			return null;
+		}else {
+			return this;
+		}
+	}
 	
 	abstract void use();
 	
